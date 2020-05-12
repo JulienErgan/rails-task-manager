@@ -1,0 +1,6 @@
+<h1><%= @task.title %></h1>
+<h2><%= @task.details %></h2>
+<p><%= @task.completed ? "✅ task completed" : "[ ] task not completed yet" %></p>
+
+<%= link_to 'Back to the list', tasks_path %>
+

@@ -3,6 +3,6 @@
 <form action="">
   <% @tasks.each do |task| %>
     <input type="checkbox" id="<%= task.id %>">
-    <label for="<%= task.id %>"><%= task.title %></label>
+    <label for="<%= task.id %>"><%= link_to task.title, task_path(task) %></label>
   <% end %>
 </form>
