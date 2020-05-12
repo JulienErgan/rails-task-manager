@@ -2,5 +2,6 @@
 <h2><%= @task.details %></h2>
 <p><%= @task.completed ? "✅ task completed" : "[ ] task not completed yet" %></p>
 
+<%= link_to 'edit task', edit_task_path(@task) %>
 <%= link_to 'Back to the list', tasks_path %>
 
