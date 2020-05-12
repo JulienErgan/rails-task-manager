@@ -1,0 +1,8 @@
+<h1>My Tasks</h1>
+
+<form action="">
+  <% @tasks.each do |task| %>
+    <input type="checkbox" id="<%= task.id %>">
+    <label for="<%= task.id %>"><%= task.title %></label>
+  <% end %>
+</form>
