@@ -4,4 +4,8 @@
 
 <%= link_to 'edit task', edit_task_path(@task) %>
 <%= link_to 'Back to the list', tasks_path %>
+<%= link_to '🚽',
+  task_path(@task),
+  method: :delete,
+  data: { confirm: "Are you sure you want to delete #{@task.title}?"} %>
 
